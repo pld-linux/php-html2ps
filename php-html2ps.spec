@@ -10,6 +10,11 @@ URL:		http://www.tufat.com/html2ps.php
 BuildRequires:	rpmbuild(macros) >= 1.461
 Requires:	php(gd)
 Requires:	php-common >= 3:4.3.0
+Suggests:	php(domxml)
+Suggests:	php(zlib)
+Suggests:	php-activelink-xml
+Suggests:	php-pecl-pdflib
+Suggests:	php(iconv)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
