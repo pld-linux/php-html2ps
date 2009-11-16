@@ -8,6 +8,7 @@ Source0:	http://dl.sourceforge.net/project/html2ps/html2ps/html2ps-%{version}/ht
 # Source0-md5:	2bd43d519ae7738d091dd66c41895ec4
 URL:		http://www.tufat.com/html2ps.php
 BuildRequires:	rpmbuild(macros) >= 1.461
+BuildRequires:	unzip
 Requires:	php(gd)
 Requires:	php-common >= 3:4.3.0
 Suggests:	php(domxml)
