@@ -4,18 +4,18 @@ Version:	2.0.43
 Release:	0.1
 License:	LGPL 2.1
 Group:		Development/Languages/PHP
-Source0:	http://dl.sourceforge.net/project/html2ps/html2ps/html2ps-%{version}/html2ps-%{version}.zip
+Source0:	http://downloads.sourceforge.net/html2ps/html2ps-%{version}.zip
 # Source0-md5:	2bd43d519ae7738d091dd66c41895ec4
 URL:		http://www.tufat.com/html2ps.php
 BuildRequires:	rpmbuild(macros) >= 1.461
 BuildRequires:	unzip
+Requires:	php(core) >= 4.3.0
 Requires:	php(gd)
-Requires:	php-common >= 3:4.3.0
 Suggests:	php(domxml)
+Suggests:	php(iconv)
+Suggests:	php(pdflib)
 Suggests:	php(zlib)
 Suggests:	php-activelink-xml
-Suggests:	php-pecl-pdflib
-Suggests:	php(iconv)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
